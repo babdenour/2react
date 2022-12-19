@@ -17,11 +17,11 @@ type ArtProps = {
 export const Art = (props: any) => {
 
   return (
-    <div className="flex flex-col h-[67vh] lg:h-full justify-center items-center text-center w-4/5 m-auto">
-      <img className="max-h-[50vh] lg:max-h-full w-[45vh] mb-5 cursor-pointer"
+    <div className=" h-[67vh] lg:h-full w-4/5 m-auto items-center">
+      <img className="max-h-[50vh] lg:max-h-full  mb-5 cursor-pointer object-center"
         onClick={props.fn} src={props.data?.path} alt={props.data.imgDetails?.name ?? "image"} />
       {props.data.path !== '/images/0.jpg' ? (
-        <div className="">
+        <div className="text-center">
           <p id="info-phone" className="block lg:hidden">
             {props.data.imgDetails?.name}<br />
             {props.data.imgDetails?.title}
@@ -56,14 +56,14 @@ export const Art = (props: any) => {
         </div>
       ) : (
         <>
-          <p className="hidden lg:block">
+          <p className="hidden lg:block text-center">
             JACOB HOLDT<br />
             LOVE JACOB<br />
             VERNISSAGE FRIDAY 11 NOVEMBER 7-9 PM<br />
             UNTIL 11 FEBRUARY 2023<br />
             7 RUE AMBROISE THOMAS 75009 - PARIS
           </p>
-          <p className="block lg:hidden">
+          <p className="block lg:hidden text-center">
             JACOB HOLDT<br />
             LOVE JACOB<br />
             VERNISSAGE FRIDAY <br />

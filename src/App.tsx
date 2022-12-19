@@ -96,16 +96,16 @@ function App() {
 
   return (
     <div className="flex flex-col h-full lg:h-screen justify-center items-center gap-5 p-8 lg:p-0">
-      <div className="w-full flex flex-col justify-center items-center h-1/8">
+      <div className="w-full flex flex-col justify-center items-center h-1/8 mt-5">
         <img className="aspect-[265.01,248.09] h-[5rem]" src={logo} alt="2piano logo" onClick={() => restAll()} />
       </div>
       {show === 'art' ?
-        <div className="max-h-max h-4/5">
+        <div className="h-4/5 max-h-max">
           <Art  {...dt} />
         </div>
         : show === 'past' ? <Past />
           : <Contact />}
-      <div className="h-1/8 w-full flex flex-col items-center text-center gap-5 mb-5 cursor-pointer">
+      <div className="h-1/8 w-full flex flex-col items-center text-center gap-5 cursor-pointer">
         <p onClick={() => show === 'past' ? pastToGalerry() : setShow('past')}>PAST</p>
         <p onClick={() => setShow('contact')}>CONTACT</p>
       </div>

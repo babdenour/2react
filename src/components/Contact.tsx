@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="flex flex-col w-full h-full justify-start items-center text-center gap-5">
+    <div className="flex flex-col w-full h-[67vh] lg:h-full justify-start items-center text-center gap-5">
       <a
         href="https://www.google.com/maps/place/2+PIANO/@48.8746844,2.3122248,14z/data=!4m5!3m4!1s0x47e66f385cf469bf:0x17d91c3e76017013!8m2!3d48.8746844!4d2.3472437"
         target="_blank"
